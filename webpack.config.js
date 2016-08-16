@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './entry.jsx',
+  entry: './public/entry.jsx',
   output: {
     path: __dirname,
     publicPath: '/assets/',
