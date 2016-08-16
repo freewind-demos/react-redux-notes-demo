@@ -33,11 +33,11 @@ app.use(express.static('./public'));
 
 const messages = [];
 
-app.get('/messages', function (req, res) {
+app.get('/api/messages', function (req, res) {
   res.json(messages);
 });
 
-app.post('/messages', function (req, res) {
+app.post('/api/messages', function (req, res) {
   const message = req.body;
   messages.push(message);
   res.send(201);
